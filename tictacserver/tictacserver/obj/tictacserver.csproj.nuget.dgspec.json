@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj": {}
+    "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj": {
+    "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj",
+        "projectUniqueName": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj",
         "projectName": "tictacserver",
-        "projectPath": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj",
+        "projectPath": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj",
         "packagesPath": "C:\\Users\\leon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\obj\\",
+        "outputPath": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leon\\AppData\\Roaming\\NuGet\\NuGet.Config",

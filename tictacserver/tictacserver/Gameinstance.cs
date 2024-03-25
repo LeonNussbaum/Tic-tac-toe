@@ -7,10 +7,10 @@ using WebSocketSharp.Server;
 
 namespace tictacserver
 {
-    public class gameinstance
+    public class Gameinstance
     {
         public List<WebSocketBehavior> Players { get; private set; }
-        public  gameinstance()
+        public  Gameinstance()
         {
 
             string generatedid;
@@ -37,7 +37,7 @@ namespace tictacserver
             return gid;
         }
 
-        private bool checkifidisfree(List<gameinstance> gameinstances, string gid)
+        private bool checkifidisfree(List<Gameinstance> gameinstances, string gid)
         {
             for (int i = 0; i < gameinstances.Count; i++)
             {
@@ -49,6 +49,18 @@ namespace tictacserver
             return true;
         }
 
+        public static string GetCurrentSessionsById()
+        {
+            string r = "p;";
+
+            for (int i = 0; i < Program.gameinstances.Count; i++)
+            {
+                r += Program.gameinstances[i].id + ";";
+            }
+            Console.WriteLine(r);
+            return r;
+            
+        }
 
         public string id;
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bEmDqQfpYTQ69NATVuCtrmqsXITmP1x9QOoSIK6x6SumubKHEVvDcaKJHGYkUNnBptBKNgBmBPd3HpG9qyovbQ==",
+  "dgSpecHash": "2rIZHi1EeOwaO7Iu015j+WYxBXZNSHO8+hVfvGxoIGh03vKr4sCRhXbKsHRbM99d7lsqi1sHynJjkkQUs6O8+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj",
+  "projectFilePath": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leon\\.nuget\\packages\\websocketsharpfork\\1.0.4\\websocketsharpfork.1.0.4.nupkg.sha512"
   ],
