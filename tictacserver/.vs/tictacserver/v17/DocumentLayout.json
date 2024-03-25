@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leon\\git\\tictacserver\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|c:\\users\\leon\\git\\tictacserver\\tictacserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|c:\\users\\leon\\git\\tictacserver\\tictacserver\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|c:\\users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\tictacserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\Program.cs",
+              "RelativeDocumentMoniker": "tictacserver\\Program.cs",
+              "ToolTip": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\Program.cs",
+              "RelativeToolTip": "tictacserver\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T16:25:41.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "game.cs",
+              "DocumentMoniker": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\game.cs",
+              "RelativeDocumentMoniker": "tictacserver\\game.cs",
+              "ToolTip": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\game.cs",
+              "RelativeToolTip": "tictacserver\\game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T16:34:43.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tictacserver",
+              "DocumentMoniker": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj",
+              "RelativeDocumentMoniker": "tictacserver\\tictacserver.csproj",
+              "ToolTip": "C:\\Users\\leon\\git\\tictacserver\\tictacserver\\tictacserver.csproj",
+              "RelativeToolTip": "tictacserver\\tictacserver.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-25T16:27:38.334Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
