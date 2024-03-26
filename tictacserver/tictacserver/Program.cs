@@ -82,7 +82,13 @@ namespace tictacserver
                         SendMessageToConnection(Program.gameinstances[i].playerO.internalid, "STARTP" + Program.gameinstances[i].grid);
 
                     }
-                    Console.WriteLine(Program.gameinstances[i].Wincheck());
+                    if (Program.gameinstances[i].Wincheck() != "")
+                    {
+                        SendMessageToConnection(Program.gameinstances[i].playerO.internalid,"W" + Program.gameinstances[i].Wincheck());
+                        SendMessageToConnection(Program.gameinstances[i].playerxx.internalid, "W" + Program.gameinstances[i].Wincheck());
+                        Program.gameinstances.RemoveAt(i);
+
+                    }
                 }
 
             }
@@ -90,11 +96,6 @@ namespace tictacserver
             {
                 
             }
-
-            //Send(Context.UserEndPoint.ToString());
-
-            // Example: Sending a message to a specific connection
-            //SendMessageToConnection("[::1]:50095", "Your message here");
         }
 
         protected override void OnOpen()
@@ -103,7 +104,6 @@ namespace tictacserver
             connections.Add(connectionId, this);
         }
 
-        // Method to send a message to a specific connection
         private void SendMessageToConnection(string connectionId, string message)
         {
             if (connections.ContainsKey(connectionId))

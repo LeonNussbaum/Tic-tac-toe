@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|c:\\users\\leon\\git\\tic-tac-toe\\tictacserver\\tictacserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|c:\\users\\leon\\git\\tic-tac-toe\\tictacserver\\tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "tictacserver\\Program.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Program.cs",
               "RelativeToolTip": "tictacserver\\Program.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAA5wHEAAAAUAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAuwFgAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T16:25:41.694Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "tictacserver\\Gameinstance.cs",
               "ViewState": "AQIAAOYAAAAAAAAAAAAwwI8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T16:34:43.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T16:34:43.186Z"
             },
             {
               "$type": "Document",

@@ -10,7 +10,7 @@ namespace tictacconsole
         public static WebSocket webSocket = new WebSocket("ws://localhost:4242/join");
         public static string[,] gridcoppy = new string[3,3];
         public static string[,] Gamegrid = new string[3,3];
-
+        public static string winuser = "";
         public static bool Gamestart = false;
 
         public static string playertype = string.Empty;
@@ -118,7 +118,7 @@ namespace tictacconsole
             Console.Clear();
             int x =0, y=0;
 
-            while (true)
+            while (winuser == "")
             {
                 if (Console.KeyAvailable)
                 {
@@ -161,8 +161,12 @@ namespace tictacconsole
                     Console.Clear();
                     PrintGrid(x, y);
                 }
-   
             }
+            Console.Clear();
+            Console.WriteLine(winuser);
+            Console.ReadKey();
+            winuser = "";
+            Menu();
         }
 
         public static void PrintGrid(int x, int y)
@@ -258,6 +262,10 @@ namespace tictacconsole
             else if (e.Data.StartsWith('F'))
             {
                 Console.WriteLine(e.Data);
+            }
+            else if (e.Data.StartsWith("W"))
+            {
+                winuser = "Player with the " + e.Data.Substring(1)+ " winns";
             }
             else
             {
