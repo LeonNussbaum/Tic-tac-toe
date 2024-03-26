@@ -36,9 +36,9 @@ namespace tictacserver
                     if (Program.gameinstances[index].playerxiset)
                     {
                         user = "O";
-                        SendMessageToConnection(Program.gameinstances[index].playerxx.internalid, "START" + Program.gameinstances[index].grid);
+                        SendMessageToConnection(Program.gameinstances[index].playerxx.internalid, "STARTP" + Program.gameinstances[index].grid);
                         Send("C" + user);
-                        Send("START" + Program.gameinstances[index].grid);
+                        Send("STARTW" + Program.gameinstances[index].grid);
                     }
                     else
                     {
@@ -54,6 +54,37 @@ namespace tictacserver
             {
                 Send(Gameinstance.GetCurrentSessionsById());
                 Console.WriteLine("[SERVER] Send sessions to user");
+            }
+            else if (e.Data.StartsWith("GD"))
+            {
+                int x, y;
+                x = Convert.ToInt32(e.Data.Substring(3, 1));
+                y = Convert.ToInt32(e.Data.Substring(5, 1));
+                Console.WriteLine(y);
+                Console.WriteLine(x);
+
+                int index = 0;
+                for (int i = 0; i < Program.gameinstances.Count; i++)
+                {
+                    if (Program.gameinstances[i].playerO.internalid == Context.UserEndPoint.ToString())
+                    {
+                        Program.gameinstances[i].gamesymbols[x, y] = "O";
+                        index = i;
+                        Send("STARTW" + Program.gameinstances[i].grid);
+                        SendMessageToConnection(Program.gameinstances[i].playerxx.internalid, "STARTP" + Program.gameinstances[i].grid);
+
+
+                    }
+                    if (Program.gameinstances[i].playerxx.internalid == Context.UserEndPoint.ToString())
+                    {
+                        Program.gameinstances[i].gamesymbols[x,y] = "X";
+                        index = i;
+                        Send("STARTW" + Program.gameinstances[i].grid);
+                        SendMessageToConnection(Program.gameinstances[i].playerO.internalid, "STARTP" + Program.gameinstances[i].grid);
+
+                    }
+                }
+
             }
             else
             {

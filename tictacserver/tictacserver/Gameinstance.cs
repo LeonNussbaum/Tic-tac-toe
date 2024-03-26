@@ -15,6 +15,8 @@ namespace tictacserver
 
         public User playerO;
 
+        public List<User> users = new List<User>();
+
 
         public bool playerxiset = false;
 
@@ -24,11 +26,14 @@ namespace tictacserver
             {
                 playerxiset = true;
                 playerxx = player;
+
+
             }
             else
             {
                 playerO = player;
             }
+            users.Add(player);
             Playercount++;
         }
         public List<WebSocketBehavior> Players { get; private set; }
@@ -52,9 +57,25 @@ namespace tictacserver
                 {
                     for (int j = 0; j < 3; j++)
                     {
-                        r += Convert.ToString(gamesymbols[j, i]) + ";" ;
+                        if (string.IsNullOrEmpty(gamesymbols[j, i]))
+                        {
+                            r += " ";
+                            Console.Write(" ");
+                        }
+                        else
+                        {
+                            r += Convert.ToString(gamesymbols[j, i]);
+                            Console.Write(Convert.ToString(gamesymbols[j, i]));
+                        }
+                        
+
                     }
+                    Console.WriteLine();
+                    r += ";";
                 }
+                Console.WriteLine();
+                Console.WriteLine();
+
                 return r;
             }
         }
