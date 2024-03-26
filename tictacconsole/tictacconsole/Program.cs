@@ -8,7 +8,7 @@ namespace tictacconsole
     {
         public static List<string> Sessions = new List<string>();
         public static WebSocket webSocket = new WebSocket("ws://localhost:4242/join");
-
+        public static string[,] gridcoppy = new string[3,3];
         public static string[,] Gamegrid = new string[3,3];
 
         public static bool Gamestart = false;
@@ -16,6 +16,8 @@ namespace tictacconsole
         public static string playertype = string.Empty;
 
         public static bool isturn;
+
+        public static bool dataupdate = false;
 
         static void Main(string[] args)
         {
@@ -118,63 +120,76 @@ namespace tictacconsole
 
             while (true)
             {
-                
-                PrintGrid(x, y);
-                string key = Console.ReadKey().Key.ToString();
-                
-                if (key == "UpArrow")
+                if (Console.KeyAvailable)
                 {
-                    y--;
-                }
-                else if (key == "RightArrow")
-                {
-                    x++;
-                }
-                else if (key == "LeftArrow")
-                {
-                    x--;
-                }
-                else if (key == "DownArrow")
-                {
-                    y++;
-                }
-                else if (key == "Enter")
-                {
-                    if (Gamegrid[x, y] == " ")
+                    string key = Console.ReadKey().Key.ToString();
+
+                    if (key == "UpArrow")
                     {
-                        if (isturn)
+                        y--;
+                    }
+                    else if (key == "RightArrow")
+                    {
+                        x++;
+                    }
+                    else if (key == "LeftArrow")
+                    {
+                        x--;
+                    }
+                    else if (key == "DownArrow")
+                    {
+                        y++;
+                    }
+                    else if (key == "Enter")
+                    {
+                        if (Gamegrid[x, y] == " ")
                         {
-                            webSocket.Send("GD" +";"+x + ";" + y);
+                            if (isturn)
+                            {
+                                webSocket.Send("GD" + ";" + x + ";" + y);
+                            }
                         }
                     }
+                    Console.Clear();
+                    PrintGrid(x, y);
+                    
                 }
-                Console.Clear();   
+                Thread.Sleep(200);
+                if (gridcoppy != Program.Gamegrid)
+                {
+                    gridcoppy = Program.Gamegrid;
+                    Console.Clear();
+                    PrintGrid(x, y);
+                }
+   
             }
         }
 
         public static void PrintGrid(int x, int y)
         {
+            Console.WriteLine("-------");
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
                     if (j == x && i == y)
                     {
+                        Console.Write("|");
                         Console.ForegroundColor = ConsoleColor.Magenta;
                         Console.BackgroundColor = ConsoleColor.Blue;
-                        
                         Console.Write(Gamegrid[j, i]);
-                    }
-                    else 
-                    {
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.BackgroundColor = ConsoleColor.Black;
+                    }
+                    else 
+                    {                      
+                        Console.Write("|");
                         Console.Write(Gamegrid[j, i]);
-                        
-
                     }
                 }
+                Console.Write("|");
                 Console.WriteLine();
+                Console.WriteLine("-------");
             }
         }
 
@@ -221,8 +236,8 @@ namespace tictacconsole
             else if (e.Data.StartsWith("STARTP"))
             {
                 string input = e.Data.Substring(6);
-                Console.WriteLine(input);
                 Gamegrid = GameBuilder(input);
+
                 isturn = true;
                 Gamestart = true;
                 
@@ -231,11 +246,9 @@ namespace tictacconsole
             else if (e.Data.StartsWith("STARTW"))
             {
                 string input = e.Data.Substring(6);
-                
                 Gamegrid = GameBuilder(input);
                 isturn = false;
                 Gamestart = true;
-
 
             }
             else if (e.Data.StartsWith("C"))

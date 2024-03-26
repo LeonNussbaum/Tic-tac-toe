@@ -60,8 +60,7 @@ namespace tictacserver
                 int x, y;
                 x = Convert.ToInt32(e.Data.Substring(3, 1));
                 y = Convert.ToInt32(e.Data.Substring(5, 1));
-                Console.WriteLine(y);
-                Console.WriteLine(x);
+
 
                 int index = 0;
                 for (int i = 0; i < Program.gameinstances.Count; i++)
@@ -83,6 +82,7 @@ namespace tictacserver
                         SendMessageToConnection(Program.gameinstances[i].playerO.internalid, "STARTP" + Program.gameinstances[i].grid);
 
                     }
+                    Console.WriteLine(Program.gameinstances[i].Wincheck());
                 }
 
             }
