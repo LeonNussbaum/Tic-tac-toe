@@ -19,19 +19,13 @@ namespace tictacserver
             else if (e.Data.StartsWith("J"))
             {
                 int index = 0;
-                for (int i = 0; i < Program.gameinstances.Count;)
+                for (int i = 0; i < Program.gameinstances.Count; i++)
                 {
                     if (Program.gameinstances[i].id == e.Data.Substring(1))
                     {
                         index = i; break;
                     }
                 }
-                if (Program.gameinstances[index].Playercount == 2)
-                {
-                    
-                }
-                else
-                {
                     string user = "";
                     if (Program.gameinstances[index].playerxiset)
                     {
@@ -45,7 +39,6 @@ namespace tictacserver
                         user = "X";
                         Send("C" + user);
                     }
-                }
                 Program.gameinstances[index].Join(new User(Context.UserEndPoint.ToString()));
                 Console.WriteLine("[SERVER] Player Joined Session " + Program.gameinstances[index].id);
 
@@ -86,6 +79,7 @@ namespace tictacserver
                     {
                         SendMessageToConnection(Program.gameinstances[i].playerO.internalid,"W" + Program.gameinstances[i].Wincheck());
                         SendMessageToConnection(Program.gameinstances[i].playerxx.internalid, "W" + Program.gameinstances[i].Wincheck());
+                        Console.WriteLine("[SERVER] Game with id " + Program.gameinstances[i].id + " endet player with symbol " + Program.gameinstances[i].Wincheck() +" won");
                         Program.gameinstances.RemoveAt(i);
 
                     }

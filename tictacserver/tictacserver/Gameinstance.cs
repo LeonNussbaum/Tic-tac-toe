@@ -60,21 +60,21 @@ namespace tictacserver
                         if (string.IsNullOrEmpty(gamesymbols[j, i]))
                         {
                             r += " ";
-                            Console.Write(" ");
+                            //Console.Write(" ");
                         }
                         else
                         {
                             r += Convert.ToString(gamesymbols[j, i]);
-                            Console.Write(Convert.ToString(gamesymbols[j, i]));
+                            //Console.Write(Convert.ToString(gamesymbols[j, i]));
                         }
                         
 
                     }
-                    Console.WriteLine();
+                    //Console.WriteLine();
                     r += ";";
                 }
-                Console.WriteLine();
-                Console.WriteLine();
+                //Console.WriteLine();
+                //Console.WriteLine();
 
                 return r;
             }

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\tictacserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|solutionrelative:tictacserver\\gameinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B75DEEE-4F11-447C-9D04-8D65C203D2AE}|tictacserver\\tictacserver.csproj|C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -36,9 +36,10 @@
               "RelativeDocumentMoniker": "tictacserver\\User.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\User.cs",
               "RelativeToolTip": "tictacserver\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T20:11:06.567Z"
+              "WhenOpened": "2024-03-25T20:11:06.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,26 +49,27 @@
               "RelativeDocumentMoniker": "tictacserver\\Program.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Program.cs",
               "RelativeToolTip": "tictacserver\\Program.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAuwFgAAAA6AAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwDwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T16:25:41.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Gameinstance.cs",
               "DocumentMoniker": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Gameinstance.cs",
               "RelativeDocumentMoniker": "tictacserver\\Gameinstance.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Gameinstance.cs",
               "RelativeToolTip": "tictacserver\\Gameinstance.cs",
-              "ViewState": "AQIAAOYAAAAAAAAAAAAwwI8AAAAVAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAA1wFoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T16:34:43.186Z"
+              "WhenOpened": "2024-03-25T16:34:43.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "tictacserver.csproj",
               "DocumentMoniker": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\tictacserver.csproj",
               "RelativeDocumentMoniker": "tictacserver\\tictacserver.csproj",
@@ -75,7 +77,8 @@
               "RelativeToolTip": "tictacserver\\tictacserver.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T16:27:38.334Z"
+              "WhenOpened": "2024-03-25T16:27:38.334Z",
+              "EditorCaption": ""
             }
           ]
         }

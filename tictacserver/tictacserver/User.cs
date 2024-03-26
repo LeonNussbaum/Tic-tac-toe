@@ -10,7 +10,6 @@ namespace tictacserver
     {
         public string internalid;
 
-        public string username;
         public User(string internalid)
         {
             this.internalid = internalid;

@@ -16,3 +16,21 @@ C:\Users\leon\git\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\refin
 C:\Users\leon\git\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.pdb
 C:\Users\leon\git\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.genruntimeconfig.cache
 C:\Users\leon\git\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\ref\tictacconsole.dll
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\bin\Debug\net8.0\tictacconsole.exe
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\bin\Debug\net8.0\tictacconsole.deps.json
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\bin\Debug\net8.0\tictacconsole.runtimeconfig.json
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\bin\Debug\net8.0\tictacconsole.dll
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\bin\Debug\net8.0\tictacconsole.pdb
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\bin\Debug\net8.0\websocket-sharp.dll
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.csproj.AssemblyReference.cache
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.AssemblyInfoInputs.cache
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.AssemblyInfo.cs
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.csproj.CoreCompileInputs.cache
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.sourcelink.json
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacco.73ECFD4A.Up2Date
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.dll
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\refint\tictacconsole.dll
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.pdb
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\tictacconsole.genruntimeconfig.cache
+C:\Users\leon\git\New folder\Tic-tac-toe\tictacconsole\tictacconsole\obj\Debug\net8.0\ref\tictacconsole.dll
