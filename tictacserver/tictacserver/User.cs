@@ -8,9 +8,19 @@ namespace tictacserver
 {
     public class User
     {
-        public User()
+        public string internalid;
+
+        public string username;
+        public User(string internalid)
         {
-            
+            this.internalid = internalid;
+
         }
+
+        public override string ToString()
+        {
+            return internalid;
+        }
+
     }
 }

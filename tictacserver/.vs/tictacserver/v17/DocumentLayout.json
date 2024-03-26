@@ -36,9 +36,10 @@
               "RelativeDocumentMoniker": "tictacserver\\User.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\User.cs",
               "RelativeToolTip": "tictacserver\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T20:11:06.567Z"
+              "WhenOpened": "2024-03-25T20:11:06.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,7 +49,7 @@
               "RelativeDocumentMoniker": "tictacserver\\Program.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Program.cs",
               "RelativeToolTip": "tictacserver\\Program.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAIAwwEEAAAAAAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAgwDsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T16:25:41.694Z",
               "EditorCaption": ""
@@ -61,7 +62,7 @@
               "RelativeDocumentMoniker": "tictacserver\\Gameinstance.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Gameinstance.cs",
               "RelativeToolTip": "tictacserver\\Gameinstance.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAApwDYAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAswBIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T16:34:43.186Z",
               "EditorCaption": ""

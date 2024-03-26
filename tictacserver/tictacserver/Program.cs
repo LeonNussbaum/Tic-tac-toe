@@ -18,22 +18,52 @@ namespace tictacserver
             }
             else if (e.Data.StartsWith("J"))
             {
-                // Do something for messages starting with "J"
+                int index = 0;
+                for (int i = 0; i < Program.gameinstances.Count;)
+                {
+                    if (Program.gameinstances[i].id == e.Data.Substring(1))
+                    {
+                        index = i; break;
+                    }
+                }
+                if (Program.gameinstances[index].Playercount == 2)
+                {
+                    
+                }
+                else
+                {
+                    string user = "";
+                    if (Program.gameinstances[index].playerxiset)
+                    {
+                        user = "O";
+                        SendMessageToConnection(Program.gameinstances[index].playerxx.internalid, "START" + Program.gameinstances[index].grid);
+                        Send("C" + user);
+                        Send("START" + Program.gameinstances[index].grid);
+                    }
+                    else
+                    {
+                        user = "X";
+                        Send("C" + user);
+                    }
+                }
+                Program.gameinstances[index].Join(new User(Context.UserEndPoint.ToString()));
+                Console.WriteLine("[SERVER] Player Joined Session " + Program.gameinstances[index].id);
+
             }
             else if (e.Data.StartsWith("P"))
             {
                 Send(Gameinstance.GetCurrentSessionsById());
+                Console.WriteLine("[SERVER] Send sessions to user");
             }
             else
             {
-                // Handle other messages or perform additional checks
+                
             }
 
-            // Send the connection ID to the client
-            Send(Context.UserEndPoint.ToString());
+            //Send(Context.UserEndPoint.ToString());
 
             // Example: Sending a message to a specific connection
-            SendMessageToConnection("[::1]:50095", "Your message here");
+            //SendMessageToConnection("[::1]:50095", "Your message here");
         }
 
         protected override void OnOpen()
@@ -54,12 +84,12 @@ namespace tictacserver
                 }
                 else
                 {
-                    Console.WriteLine("Connection is not open.");
+                    Console.WriteLine("[SERVER] Connection is not open.");
                 }
             }
             else
             {
-                Console.WriteLine("Connection ID not found.");
+                Console.WriteLine("[SERVER] Connection ID not found.");
             }
         }
     }

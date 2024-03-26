@@ -9,8 +9,56 @@ namespace tictacserver
 {
     public class Gameinstance
     {
+        public int Playercount;
+
+        public User playerxx;
+
+        public User playerO;
+
+
+        public bool playerxiset = false;
+
+        public void Join(User player)
+        {
+            if (!playerxiset)
+            {
+                playerxiset = true;
+                playerxx = player;
+            }
+            else
+            {
+                playerO = player;
+            }
+            Playercount++;
+        }
         public List<WebSocketBehavior> Players { get; private set; }
-        public  Gameinstance()
+
+        public void startgame()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return id;
+        }
+
+        public string grid
+        {
+            get 
+            {
+                string r = string.Empty;
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        r += Convert.ToString(gamesymbols[j, i]) + ";" ;
+                    }
+                }
+                return r;
+            }
+        }
+        public Gameinstance()
         {
 
             string generatedid;
@@ -19,7 +67,7 @@ namespace tictacserver
             {
                 generatedid = "";
                 generatedid = genid();
-                
+
                 validid = checkifidisfree(Program.gameinstances, generatedid);
             } while (!validid);
             this.id = generatedid;
@@ -55,11 +103,12 @@ namespace tictacserver
 
             for (int i = 0; i < Program.gameinstances.Count; i++)
             {
-                r += Program.gameinstances[i].id + ";";
+                if (Program.gameinstances[i].Playercount != 2)
+                {
+                    r += Program.gameinstances[i].id + ";";
+                }
             }
-            Console.WriteLine(r);
             return r;
-            
         }
 
         public string id;
