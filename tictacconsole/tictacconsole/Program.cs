@@ -17,8 +17,6 @@ namespace tictacconsole
 
         public static bool isturn;
 
-        public static bool dataupdate = false;
-
         static void Main(string[] args)
         {
 
@@ -56,9 +54,10 @@ namespace tictacconsole
                 string id = "";
                 while (true)
                 {
+                    webSocket.Send("P");
+                    Thread.Sleep(30);
                     Console.Write("Enter Session ID :");
-                    id = Console.ReadLine();
-                    if (Sessions.Contains(id))
+                    if (Sessions.Contains(Console.ReadLine()))
                     {
                         break;
                     }
@@ -166,6 +165,7 @@ namespace tictacconsole
             Console.WriteLine(winuser);
             Console.ReadKey();
             winuser = "";
+            Gamestart = false;
             Menu();
         }
 

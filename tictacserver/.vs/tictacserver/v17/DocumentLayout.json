@@ -38,8 +38,7 @@
               "RelativeToolTip": "tictacserver\\User.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAgwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T20:11:06.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T20:11:06.567Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "tictacserver\\Program.cs",
               "ToolTip": "C:\\Users\\leon\\git\\Tic-tac-toe\\tictacserver\\tictacserver\\Program.cs",
               "RelativeToolTip": "tictacserver\\Program.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAwwDwAAAAUAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA5wBAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T16:25:41.694Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "tictacserver\\Gameinstance.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAA1wFoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T16:34:43.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T16:34:43.186Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "tictacserver\\tictacserver.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T16:27:38.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T16:27:38.334Z"
             }
           ]
         }
