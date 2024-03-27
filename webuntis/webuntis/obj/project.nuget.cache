@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZbweH/23m3abXGIOj+SkjI0LEvVsocxYb3mxxs2mg/+a8axcB5Nkj1S6qX2ijiHKTtKU1tiTV0eCzTZHrXz3EA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leon\\git\\Tic-tac-toe\\webuntis\\webuntis\\webuntis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leon\\.nuget\\packages\\webuntis.net\\2.0.0\\webuntis.net.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

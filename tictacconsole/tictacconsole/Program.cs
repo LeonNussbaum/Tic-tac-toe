@@ -57,7 +57,8 @@ namespace tictacconsole
                     webSocket.Send("P");
                     Thread.Sleep(30);
                     Console.Write("Enter Session ID :");
-                    if (Sessions.Contains(Console.ReadLine()))
+                    id = Console.ReadLine();
+                    if (Sessions.Contains(id))
                     {
                         break;
                     }

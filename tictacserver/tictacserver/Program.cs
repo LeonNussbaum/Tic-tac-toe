@@ -23,24 +23,25 @@ namespace tictacserver
                 {
                     if (Program.gameinstances[i].id == e.Data.Substring(1))
                     {
-                        index = i; break;
+                        string user = "";
+                        if (Program.gameinstances[i].playerxiset)
+                        {
+                            user = "O";
+                            SendMessageToConnection(Program.gameinstances[i].playerxx.internalid, "STARTP" + Program.gameinstances[i].grid);
+                            Send("C" + user);
+                            Send("STARTW" + Program.gameinstances[i].grid);
+                        }
+                        else
+                        {
+                            user = "X";
+                            Send("C" + user);
+                        }
+                        Program.gameinstances[i].Join(new User(Context.UserEndPoint.ToString()));
+                        Console.WriteLine("[SERVER] Player Joined Session " + Program.gameinstances[i].id);
+                        break;
                     }
                 }
-                    string user = "";
-                    if (Program.gameinstances[index].playerxiset)
-                    {
-                        user = "O";
-                        SendMessageToConnection(Program.gameinstances[index].playerxx.internalid, "STARTP" + Program.gameinstances[index].grid);
-                        Send("C" + user);
-                        Send("STARTW" + Program.gameinstances[index].grid);
-                    }
-                    else
-                    {
-                        user = "X";
-                        Send("C" + user);
-                    }
-                Program.gameinstances[index].Join(new User(Context.UserEndPoint.ToString()));
-                Console.WriteLine("[SERVER] Player Joined Session " + Program.gameinstances[index].id);
+
 
             }
             else if (e.Data.StartsWith("P"))
