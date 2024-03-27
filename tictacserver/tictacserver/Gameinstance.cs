@@ -17,68 +17,15 @@ namespace tictacserver
 
         public List<User> users = new List<User>();
 
+        public string id;
+
+        public string[,] gamesymbols = new string[3, 3];
+
+        public bool playerx;
+
+        public bool playero;
 
         public bool playerxiset = false;
-
-        public void Join(User player)
-        {
-            if (!playerxiset)
-            {
-                playerxiset = true;
-                playerxx = player;
-
-
-            }
-            else
-            {
-                playerO = player;
-            }
-            users.Add(player);
-            Playercount++;
-        }
-        public List<WebSocketBehavior> Players { get; private set; }
-
-        public void startgame()
-        {
-
-        }
-
-        public override string ToString()
-        {
-            return id;
-        }
-
-        public string grid
-        {
-            get 
-            {
-                string r = string.Empty;
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        if (string.IsNullOrEmpty(gamesymbols[j, i]))
-                        {
-                            r += " ";
-                            //Console.Write(" ");
-                        }
-                        else
-                        {
-                            r += Convert.ToString(gamesymbols[j, i]);
-                            //Console.Write(Convert.ToString(gamesymbols[j, i]));
-                        }
-                        
-
-                    }
-                    //Console.WriteLine();
-                    r += ";";
-                }
-                //Console.WriteLine();
-                //Console.WriteLine();
-
-                return r;
-            }
-        }
         public Gameinstance()
         {
 
@@ -92,9 +39,11 @@ namespace tictacserver
                 validid = checkifidisfree(Program.gameinstances, generatedid);
             } while (!validid);
             this.id = generatedid;
-            Players = new List<WebSocketBehavior>();
         }
-
+        public override string ToString()
+        {
+            return id;
+        }
         private string genid()
         {
             Random rnd = new Random();
@@ -105,7 +54,6 @@ namespace tictacserver
             }
             return gid;
         }
-
         private bool checkifidisfree(List<Gameinstance> gameinstances, string gid)
         {
             for (int i = 0; i < gameinstances.Count; i++)
@@ -116,6 +64,49 @@ namespace tictacserver
                 }
             }
             return true;
+        }
+
+        public void Join(User player)
+        {
+            if (!playerxiset)
+            {
+                playerxiset = true;
+                playerxx = player;
+            }
+            else
+            {
+                playerO = player;
+            }
+            users.Add(player);
+            Playercount++;
+        }
+
+
+        public string grid
+        {
+            get 
+            {
+                string r = string.Empty;
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        if (string.IsNullOrEmpty(gamesymbols[j, i]))
+                        {
+                            r += " ";
+                        }
+                        else
+                        {
+                            r += Convert.ToString(gamesymbols[j, i]);
+                        }
+                        
+
+                    }
+                    r += ";";
+                }
+
+                return r;
+            }
         }
 
         public static string GetCurrentSessionsById()
@@ -131,15 +122,6 @@ namespace tictacserver
             }
             return r;
         }
-
-        public string id;
-
-        public string[,] gamesymbols = new string[3, 3];
-
-
-        public bool playerx;
-
-        public bool playero;
 
         public string Wincheck()
         {

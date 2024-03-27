@@ -18,7 +18,6 @@ namespace tictacserver
             }
             else if (e.Data.StartsWith("J"))
             {
-                int index = 0;
                 for (int i = 0; i < Program.gameinstances.Count; i++)
                 {
                     if (Program.gameinstances[i].id == e.Data.Substring(1))
@@ -41,8 +40,6 @@ namespace tictacserver
                         break;
                     }
                 }
-
-
             }
             else if (e.Data.StartsWith("P"))
             {
@@ -65,8 +62,6 @@ namespace tictacserver
                         index = i;
                         Send("STARTW" + Program.gameinstances[i].grid);
                         SendMessageToConnection(Program.gameinstances[i].playerxx.internalid, "STARTP" + Program.gameinstances[i].grid);
-
-
                     }
                     if (Program.gameinstances[i].playerxx.internalid == Context.UserEndPoint.ToString())
                     {
@@ -74,7 +69,6 @@ namespace tictacserver
                         index = i;
                         Send("STARTW" + Program.gameinstances[i].grid);
                         SendMessageToConnection(Program.gameinstances[i].playerO.internalid, "STARTP" + Program.gameinstances[i].grid);
-
                     }
                     if (Program.gameinstances[i].Wincheck() != "")
                     {
@@ -82,14 +76,8 @@ namespace tictacserver
                         SendMessageToConnection(Program.gameinstances[i].playerxx.internalid, "W" + Program.gameinstances[i].Wincheck());
                         Console.WriteLine("[SERVER] Game with id " + Program.gameinstances[i].id + " endet player with symbol " + Program.gameinstances[i].Wincheck() +" won");
                         Program.gameinstances.RemoveAt(i);
-
                     }
                 }
-
-            }
-            else
-            {
-                
             }
         }
 

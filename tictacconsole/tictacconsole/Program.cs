@@ -12,11 +12,8 @@ namespace tictacconsole
         public static string[,] Gamegrid = new string[3,3];
         public static string winuser = "";
         public static bool Gamestart = false;
-
         public static string playertype = string.Empty;
-
         public static bool isturn;
-
         static void Main(string[] args)
         {
 
@@ -74,9 +71,6 @@ namespace tictacconsole
                 {
                 }
                 Gameloop();
-
-
-
             }
             else if (select ==3)
             {
@@ -95,7 +89,6 @@ namespace tictacconsole
         }
         public static int selection()
         {
-            
             while (true)
             {
                 DrawMenu();
@@ -208,8 +201,7 @@ namespace tictacconsole
                 for (int j = 0; j < 3; j++)
                 {
                     retundata[j,i] = Convert.ToString(data[i][j]);
-                }
-                
+                }       
             }
             return retundata;
         }
@@ -228,14 +220,11 @@ namespace tictacconsole
                     if (i != 0)
                     {
                         Sessions.Add(data[i]);
-                        //Console.Write(data[i]);
                     }
                 }
                 if (data.Length == 2)
                 {
-                    Sessions.Add("No Instances Available");
-                    //Console.WriteLine("No Instances Available");
-                    
+                    Sessions.Add("No Instances Available");   
                 }
             }
             else if (e.Data.StartsWith("STARTP"))
@@ -245,8 +234,6 @@ namespace tictacconsole
 
                 isturn = true;
                 Gamestart = true;
-                
-
             }
             else if (e.Data.StartsWith("STARTW"))
             {

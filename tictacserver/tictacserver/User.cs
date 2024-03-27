@@ -15,11 +15,9 @@ namespace tictacserver
             this.internalid = internalid;
 
         }
-
         public override string ToString()
         {
             return internalid;
         }
-
     }
 }
